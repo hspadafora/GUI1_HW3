@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<!--
+File: index.html
+
+GUI Assignment: HW3
+
+Created by: Hunter Spadafora, hunter_spadafora@student.uml.edu
+Created on: 6/15/2022
+
+Description:
+This is the HTML code for GUI1 HW3
+
+Copyright (c) 2022 by Hunter Spadafora. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit
+to the author.
+Most recent update by HZS on 6/22/2022
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="GUI1 HW3 webpage for submission.">
+        <meta name="author" content="Hunter Spadafora">
+        <meta name="creator" content="Hunter Spadafora">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>GUI1 HW3 - Multiplication Table</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Multiplication Table</h1>
+            <p id="welcome">Enter four numbers and a multiplication table will be generated.</p>
+            <p id="limit">(<span>The limit is within the range -50 and 50</span>)</p>
+        </header>
+
+        <form>
+            <label for="left">Leftmost Horizontal</label>
+            <input type="number" name="" id="left" value="0" min="-50" max="50" autofocus>
+            <br>
+            <label for="right">Rightmost Horizontal</label>
+            <input type="number" name="" id="right" value="0" min="-50" max="50">
+            <br>
+            <label for="top">Topmost Verticle</label>
+            <input type="number" name="" id="top" value="0" min="-50" max="50">
+            <br>
+            <label for="bottom">Bottom Verticle</label>
+            <input type="number" name="" id="bottom" value="0" min="-50" max="50">
+            <br>
+            <input type="button" value="Submit" id="submit">
+        </form>
+
+        <hr>
+        <div id="table_space">
+            <table>
+                <!-- Multiplication table will be generated here -->
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
